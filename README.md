@@ -1,7 +1,7 @@
 
 A home security operations center (SOC) lab built on Proxmox VE and Wazuh SIEM, with an isolated Raspberry Pi honeypot. The goal is to practice log collection, threat detection, and incident investigation hands-on, and build a foundation for a follow-up cloud security lab in Microsoft Azure.
 
-> **Status:** In progress. Proxmox host is installed and remotely accessible; SOC architecture and Wazuh deployment are next.
+> **Status:** In progress. 
 
 ## Goals
 
