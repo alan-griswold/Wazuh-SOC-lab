@@ -19,6 +19,18 @@ A home security operations center (SOC) lab built on Proxmox VE and Wazuh SIEM, 
 - Controlled attack simulation from a separate segment, with alerts flowing into Wazuh
 - Remote administration over Tailscale with key-only SSH, with no inbound ports exposed
 
+```mermaid
+flowchart TB
+    Net((Internet)) --- Dorm["Dorm Wi-Fi"]
+    Dorm --- Beryl["GL.iNet Beryl router<br/>192.168.8.1 (192.168.8.0/24)"]
+    Beryl --- BR0["vmbr0: management bridge<br/>(uplink to Beryl)"]
+    BR0 ---|"192.168.8.163"| Host["Proxmox host<br/>Tailscale 100.x.x.x"]
+    BR0 ---|"ens18: 192.168.8.185 (DHCP)"| W["wazuh (VM 100)<br/>manager, indexer, dashboard"]
+    W ---|"ens19: 10.10.10.10"| BR1["vmbr1: isolated lab bridge<br/>10.10.10.0/24, no uplink, no gateway"]
+    BR1 ---|"10.10.10.30"| E1["lab-ubuntu-01 (VM 101)"]
+    Laptop["Laptop (Tailscale)"] -.->|"SSH tunnel to :443"| Host
+```  
+
 **Phase 2: Cloud (future repo)**
 - Internet-facing honeypot in Azure feeding Microsoft Sentinel for real-world attack analysis
 _Network diagram coming once the layout is finalized._
