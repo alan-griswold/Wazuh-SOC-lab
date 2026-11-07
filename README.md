@@ -50,7 +50,7 @@ _Network diagram coming once the layout is finalized._
 |---|---|---|
 | 0. Proxmox install and remote access | Done | [Read the writeup](docs/01-proxmox-install-writeup.md) |
 | 1. Wazuh server VM | Done | [Read the writeup](docs/02-wazuh-manager.md) |
-| 2. Windows and Linux endpoints with agents | In Progress | [Read the writeup](doc/03-lab-endpoint.md) |
+| 2. Windows and Linux endpoints with agents | In Progress | [Read the writeup](docs/03-lab-endpoint.md) |
 | 3. Raspberry Pi honeypot | Planned | not yet |
 | 4. Attack simulation and custom detections | Planned | not yet |
 
