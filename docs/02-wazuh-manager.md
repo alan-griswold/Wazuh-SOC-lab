@@ -1,6 +1,6 @@
 # Deploying a Wazuh Manager VM on Proxmox
 
-**One-line summary:** Built an Ubuntu Server VM from the CLI on my Proxmox host and installed an all-in-one Wazuh SIEM (manager, indexer, dashboard) on it, working through a boot-order loop, a half-allocated LVM disk, and a leftover failed installation.
+Built an Ubuntu Server VM from the CLI on my Proxmox host and installed an all-in-one Wazuh SIEM (manager, indexer, dashboard) on it, working through a boot-order loop, a half-allocated LVM disk, and a leftover failed installation.
 
 ## Goal
 
