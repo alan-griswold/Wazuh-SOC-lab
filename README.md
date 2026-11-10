@@ -55,9 +55,4 @@ _Network diagram coming once the layout is finalized._
 | 4. Attack simulation and custom detections | Planned | not yet |
 
 
-## Lessons Learned
 
-- Check release notes and known issues before installing; the newest version isn't always the most stable.
-- When two independently verified pieces of media fail the same way, search the exact error text before re-diagnosing.
-- Prove a replacement works (key login) from a fresh session before removing the fallback (password login).
-- Real environments come with constraints, like campus network rules, and the lab has to be designed around them.
