@@ -1,6 +1,6 @@
 # Installing Proxmox VE and Securing Remote Access (HP Pavilion Gaming Desktop)
 
-**One-line summary:** Installed Proxmox VE as a bare-metal hypervisor on a second internal drive in my gaming PC (dual-booting with Windows), worked through an upstream installer bug, an Nvidia display conflict, and a network misconfiguration, then locked it down for key-only remote access over Tailscale.
+Installed Proxmox VE as a bare-metal hypervisor on a second internal drive in my gaming PC (dual-booting with Windows), worked through an upstream installer bug, an Nvidia display conflict, and a network misconfiguration, then locked it down for key-only remote access over Tailscale.
 
 ## Goal
 
